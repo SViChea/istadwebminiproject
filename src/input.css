@@ -1,1 +1,55 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme{
+    /* Color */
+    --color-primary-color: #0090CC;
+    --color-secondary-color: #CC0021;
+    --color-hover-color: #285F77;
+    --color-light-gray: #F0F0F0;
+    --color-ghost-white: #F5F5F7;
+
+    /* Font */
+    --font-primary: Montserrat, system-ui, sans-serif;
+
+    /* Header */
+    --text-size-h1: 48px;
+    --text-leading-h1: 72px;
+    --font-weight-h1: bold;
+
+    --text-size-h2: 40px;
+    --text-leading-h2: 60px;
+    --font-weight-h2: bold;
+
+    --text-size-h3: 36px;
+    --text-leading-h3: 54px;
+    --font-weight-h3: semibold;
+
+    --text-size-h4: 32px;
+    --text-leading-h4: 48px;
+    --font-weight-h4: semibold;
+
+    /* Title */
+    --text-size-t1: 24px;
+    --text-leading-t1: 36px;
+    --font-weight-t1: bold;
+
+    --text-size-t2: 20px;
+    --text-leading-t2: 30px;
+    --font-weight-t2: medium;
+
+    --text-size-t3: 16px;
+    --text-leading-t3: 24px;
+    --font-weight-t3: medium;
+
+    --text-size-t4: 14px;
+    --text-leading-t4: 21px;
+    --font-weight-t4: medium;
+
+    /* Paragraph */
+    --text-size-p1: 16px;
+    --text-leading-p1: 24px;
+
+    --text-size-p2: 14px;
+    --text-leading-p2: 22px;
+}
