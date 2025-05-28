@@ -5,29 +5,388 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - ACE</title>
     <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   </head>
-  <body>
-    <header class="px-[120px]">
-      <div>
-        <div class="flex flex-row pt-[21px] gap-[20px]">
-          <img src="./images/ACE_Logo.png" alt="ACE Logo" class="h-[48px] " />
-          <img src="./images/idp-logo-freelogovectors.net_.png" alt="IDP Education Logo" class="h-[48px]" />
+  <body class="font-primary">
+    <header class="bg-white">
+      <div class="flex flex-row justify-between items-center px-[120px]">
+        <div class="flex flex-row py-[21px] gap-[20px]">
+          <img src="./images/ACE_Logo.png" alt="ACE Logo" class="h-[48px]" />
+          <img
+            src="./images/idp-logo-freelogovectors.net_.png"
+            alt="IDP Education Logo"
+            class="h-[48px]"
+          />
         </div>
-        <input type="search" placeholder="search" />
+        <form action="" class="h-[30px] border-black border-1 rounded-full pr-3">
+          <input type="search" placeholder="Search" class="border-none bg-transparent h-full w-[190px] ring-0"/>
+          <i class="fa-solid fa-magnifying-glass text-black"></i>
+        </form>
       </div>
-      <nav class="">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li>Enrollment</li>
-            <li>CELTA Cambodia</li>
+      <nav class="bg-primary-color flex flex-row justify-between items-center px-[120px] h-[50px]">
+        <!-- Left Navigation -->
+        <ul class="flex flex-row gap-[30px] justify-s items-center">
+          <!-- Programs -->
+          <li
+            id="dropdownHoverButton"
+            data-dropdown-toggle="programs"
+            data-dropdown-trigger="hover"
+            class="text-white font-t3 text-size-t3 text-left inline-flex items-center"
+            type="button"
+          >
+            Programs
+            <svg
+              class="w-2.5 h-2.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+
+            <!-- Dropdown menu -->
+            <div
+              id="programs"
+              class="z-15 hidden bg-primary-color rounded-b-[10px] w-[285px] "
+            >
+              <ul
+                class="py-2 text-t3 text-white"
+                aria-labelledby="dropdownHoverButton"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >Children's Program (CP)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >Young Learner's Program</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >General English Program (GEP)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >Diploma in English</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >IELTS Preparation Course</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >Customized Training Service</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >Customized Testing Program</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- Facilities -->
+          <li
+            id="dropdownHoverButton"
+            data-dropdown-toggle="facilities"
+            data-dropdown-trigger="hover"
+            class="text-white font-t3 text-size-t3 text-left inline-flex items-center"
+            type="button"
+          >
+            Facilities
+            <svg
+              class="w-2.5 h-2.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+
+            <!-- Dropdown menu -->
+            <div
+              id="facilities"
+              class="z-15 hidden bg-primary-color rounded-b-[10px] w-[285px]"
+            >
+              <ul
+                class="py-2 text-t3 text-white"
+                aria-labelledby="dropdownHoverButton"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >Guided Individual Learning Centre</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >IELTS Labs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >Book Clubs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >IDP Study Abroad and Scholarship Information Centre</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- Activities -->
+          <li
+            id="dropdownHoverButton"
+            data-dropdown-toggle="activities"
+            data-dropdown-trigger="hover"
+            class="text-white font-t3 text-size-t3 text-left inline-flex items-center"
+            type="button"
+          >
+            Activities
+            <svg
+              class="w-2.5 h-2.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+
+            <!-- Dropdown menu -->
+            <div
+              id="activities"
+              class="z-15 hidden bg-primary-color rounded-b-[10px] w-[285px]"
+            >
+              <ul
+                class="py-2 text-t3 text-white"
+                aria-labelledby="dropdownHoverButton"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >ACE Public Speaking and Debate Club</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >ACE Graduation</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >I'mACE Magazine</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >Diploma in English</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >ACE Charity</a
+                  >
+                </li>
+                
+              </ul>
+            </div>
+          </li>
+          <!-- Sponsorships -->
+          <li
+            id="dropdownHoverButton"
+            data-dropdown-toggle="sponsorships"
+            data-dropdown-trigger="hover"
+            class="text-white font-t3 text-size-t3 text-left inline-flex items-center"
+            type="button"
+          >
+            Sponsorship
+            <svg
+              class="w-2.5 h-2.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+
+            <!-- Dropdown menu -->
+            <div
+              id="sponsorships"
+              class="z-15 hidden bg-primary-color rounded-b-[10px] w-[285px]"
+            >
+              <ul
+                class="py-2 text-t3 text-white"
+                aria-labelledby="dropdownHoverButton"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >Sponsoring Students</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >Sponsoring Procedure</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >Scholarships Available at ACE</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="text-white hover:text-hover-color font-t3 text-size-t3 text-left inline-flex items-center" ><a href="./pages/enrollment.html">Enrollment</a></li>
+          <li class="text-white hover:text-hover-color font-t3 text-size-t3 text-left inline-flex items-center"><a href="./pages/celta_cambodia.html">CELTA Cambodia </a></li>
         </ul>
-        <ul>
-            <li></li>
-            <li>Contact Us</li>
-            <li>Careers</li>
+        <!-- Right Navigation -->
+        <ul class="flex flex-row gap-[30px]">
+          <!-- About Us -->
+          <li
+            id="dropdownHoverButton"
+            data-dropdown-toggle="aboutUs"
+            data-dropdown-trigger="hover"
+            class="text-white font-t3 text-size-t3 text-left inline-flex items-center"
+            type="button"
+          >
+            About Us
+            <svg
+              class="w-2.5 h-2.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+
+            <!-- Dropdown menu -->
+            <div
+              id="aboutUs"
+              class="z-15 hidden bg-primary-color rounded-b-[10px] w-[285px]"
+            >
+              <ul
+                class="py-2 text-t3 text-white"
+                aria-labelledby="dropdownHoverButton"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >About ACE</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >Management Team</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >Staff</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >Careers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-hover-color"
+                    >ACE Student Ambassadors</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="text-white hover:text-hover-color font-t3 text-size-t3 text-left inline-flex items-center">Contact Us</li>
+          <li class="text-white hover:text-hover-color font-t3 text-size-t3 text-left inline-flex items-center">Careers</li>
         </ul>
       </nav>
     </header>
@@ -38,5 +397,6 @@
       <section></section>
     </main>
     <footer></footer>
+    <script src="../node_modules/flowbite/dist/flowbite.js"></script>
   </body>
 </html>
