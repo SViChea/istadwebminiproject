@@ -19,42 +19,42 @@
 
     /* Header */
     --text-size-h1: 48px;
-    --text-leading-h1: 72px;
-    --font-weight-h1: bold;
+    --leading-h1: 72px;
+    --font-weight-h1: 700;
 
     --text-size-h2: 40px;
-    --text-leading-h2: 60px;
-    --font-weight-h2: bold;
+    --leading-h2: 60px;
+    --font-weight-h2: 700;
 
     --text-size-h3: 36px;
-    --text-leading-h3: 54px;
-    --font-weight-h3: semibold;
+    --leading-h3: 54px;
+    --font-weight-h3: 600;
 
     --text-size-h4: 32px;
-    --text-leading-h4: 48px;
-    --font-weight-h4: semibold;
+    --leading-h4: 48px;
+    --font-weight-h4: 600;
 
     /* Title */
     --text-size-t1: 24px;
-    --text-leading-t1: 36px;
-    --font-weight-t1: bold;
+    --leading-t1: 36px;
+    --font-weight-t1: 700;
 
     --text-size-t2: 20px;
-    --text-leading-t2: 30px;
-    --font-weight-t2: medium;
+    --leading-t2: 30px;
+    --font-weight-t2: 500;
 
     --text-size-t3: 16px;
-    --text-leading-t3: 24px;
-    --font-weight-t3: medium;
+    --leading-t3: 24px;
+    --font-weight-t3: 500;
 
     --text-size-t4: 14px;
-    --text-leading-t4: 21px;
-    --font-weight-t4: medium;
+    --leading-t4: 21px;
+    --font-weight-t4: 500;
 
     /* Paragraph */
     --text-size-p1: 16px;
-    --text-leading-p1: 24px;
+    --leading-p1: 24px;
 
     --text-size-p2: 14px;
-    --text-leading-p2: 22px;
+    --leading-p2: 22px;
 }

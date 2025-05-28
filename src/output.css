@@ -197,10 +197,14 @@
     --color-primary-color: #0090CC;
     --color-hover-color: #285F77;
     --font-primary: Montserrat, system-ui, sans-serif;
+    --text-size-t2: 20px;
+    --font-weight-t2: 500;
     --text-size-t3: 16px;
-    --font-weight-t3: medium;
-    --text-size-t4: 14px;
-    --font-weight-t4: medium;
+    --font-weight-t3: 500;
+    --text-size-p1: 16px;
+    --leading-p1: 24px;
+    --text-size-p2: 14px;
+    --leading-p2: 22px;
   }
 }
 @layer base {
@@ -1413,9 +1417,6 @@
   .table {
     display: table;
   }
-  .h-2 {
-    height: calc(var(--spacing) * 2);
-  }
   .h-2\.5 {
     height: calc(var(--spacing) * 2.5);
   }
@@ -1440,14 +1441,8 @@
   .h-\[calc\(100\%-1rem\)\] {
     height: calc(100% - 1rem);
   }
-  .h-auto {
-    height: auto;
-  }
   .h-fit {
     height: fit-content;
-  }
-  .h-full {
-    height: 100%;
   }
   .max-h-full {
     max-height: 100%;
@@ -1535,14 +1530,8 @@
       text-align: center;
     }
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
-  }
-  .w-2 {
-    width: calc(var(--spacing) * 2);
   }
   .w-2\.5 {
     width: calc(var(--spacing) * 2.5);
@@ -1561,9 +1550,6 @@
   }
   .w-\[285px\] {
     width: 285px;
-  }
-  .w-fit {
-    width: fit-content;
   }
   .w-full {
     width: 100%;
@@ -1639,9 +1625,6 @@
   .flex-shrink {
     flex-shrink: 1;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .-translate-x-full {
     --tw-translate-x: -100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -1689,6 +1672,9 @@
   .grid-cols-7 {
     grid-template-columns: repeat(7, minmax(0, 1fr));
   }
+  .flex-col {
+    flex-direction: column;
+  }
   .flex-row {
     flex-direction: row;
   }
@@ -1713,6 +1699,9 @@
   .justify-start {
     justify-content: flex-start;
   }
+  .gap-\[5px\] {
+    gap: 5px;
+  }
   .gap-\[20px\] {
     gap: 20px;
   }
@@ -1732,23 +1721,6 @@
       margin-inline-start: calc(calc(var(--spacing) * 2) * var(--tw-space-x-reverse));
       margin-inline-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-x-reverse)));
     }
-  }
-  .divide-y {
-    :where(& > :not(:last-child)) {
-      --tw-divide-y-reverse: 0;
-      border-bottom-style: var(--tw-border-style);
-      border-top-style: var(--tw-border-style);
-      border-top-width: calc(1px * var(--tw-divide-y-reverse));
-      border-bottom-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
-    }
-  }
-  .divide-gray-100 {
-    :where(& > :not(:last-child)) {
-      border-color: var(--color-gray-100);
-    }
-  }
-  .self-center {
-    align-self: center;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -1800,10 +1772,6 @@
   .border-0 {
     border-style: var(--tw-border-style);
     border-width: 0px;
-  }
-  .border-1 {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-2 {
     border-style: var(--tw-border-style);
@@ -1954,9 +1922,6 @@
       color: white;
     }
   }
-  .border-black {
-    border-color: var(--color-black);
-  }
   .border-blue-600 {
     border-color: var(--color-blue-600);
   }
@@ -1971,6 +1936,9 @@
   }
   .border-gray-300 {
     border-color: var(--color-gray-300);
+  }
+  .border-gray-600 {
+    border-color: var(--color-gray-600);
   }
   .apexcharts-active {
     .apexcharts-canvas .apexcharts-tooltip-series-group& .apexcharts-tooltip-y-group {
@@ -2014,14 +1982,14 @@
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
-  .bg-gray-900 {
-    background-color: var(--color-gray-900);
-  }
   .bg-gray-900\/50 {
     background-color: color-mix(in srgb, #111827 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-gray-900) 50%, transparent);
     }
+  }
+  .bg-hover-color {
+    background-color: var(--color-hover-color);
   }
   .bg-primary-color {
     background-color: var(--color-primary-color);
@@ -2042,9 +2010,6 @@
     & .selectedCell {
       background-color: var(--color-gray-700);
     }
-  }
-  .bg-none {
-    background-image: none;
   }
   .apexcharts-datalabels-group {
     & .apexcharts-text.apexcharts-datalabel-value {
@@ -2084,18 +2049,6 @@
       fill: white !important;
     }
   }
-  .apexcharts-gridline {
-    stroke: var(--color-gray-200) !important;
-    .dark & {
-      stroke: var(--color-gray-700) !important;
-    }
-  }
-  .apexcharts-xcrosshairs {
-    stroke: var(--color-gray-200) !important;
-    .dark & {
-      stroke: var(--color-gray-700) !important;
-    }
-  }
   .apexcharts-ycrosshairs {
     stroke: var(--color-gray-200) !important;
     .dark & {
@@ -2112,14 +2065,14 @@
       padding: 0 !important;
     }
   }
+  .p-0\.5 {
+    padding: calc(var(--spacing) * 0.5);
+  }
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
-  }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
   }
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
@@ -2154,6 +2107,9 @@
   .py-\[21px\] {
     padding-block: 21px;
   }
+  .py-\[60px\] {
+    padding-block: 60px;
+  }
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
   }
@@ -2184,6 +2140,9 @@
   }
   .pr-3 {
     padding-right: calc(var(--spacing) * 3);
+  }
+  .pb-\[10px\] {
+    padding-bottom: 10px;
   }
   .datatable-empty {
     .datatable-wrapper .datatable-table & {
@@ -2264,6 +2223,12 @@
       color: var(--color-gray-400);
     }
   }
+  .text-size-p1 {
+    font-size: var(--text-size-p1);
+  }
+  .text-size-t2 {
+    font-size: var(--text-size-t2);
+  }
   .text-size-t3 {
     font-size: var(--text-size-t3);
   }
@@ -2274,6 +2239,10 @@
   .leading-9 {
     --tw-leading: calc(var(--spacing) * 9);
     line-height: calc(var(--spacing) * 9);
+  }
+  .leading-p1 {
+    --tw-leading: var(--leading-p1);
+    line-height: var(--leading-p1);
   }
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed);
@@ -2286,6 +2255,10 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .font-t2 {
+    --tw-font-weight: var(--font-weight-t2);
+    font-weight: var(--font-weight-t2);
   }
   .font-t3 {
     --tw-font-weight: var(--font-weight-t3);
@@ -2353,9 +2326,6 @@
   }
   .uppercase {
     text-transform: uppercase;
-  }
-  .underline {
-    text-decoration-line: underline;
   }
   .opacity-0 {
     opacity: 0%;
@@ -3125,11 +3095,6 @@
   inherits: false;
   initial-value: 0;
 }
-@property --tw-divide-y-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -3293,7 +3258,6 @@
       --tw-skew-y: initial;
       --tw-space-y-reverse: 0;
       --tw-space-x-reverse: 0;
-      --tw-divide-y-reverse: 0;
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
