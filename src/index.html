@@ -9,23 +9,23 @@
   </head>
   <body class="font-primary">
     <header class="bg-white">
-      <div class="flex flex-row justify-between items-center px-[120px]">
+      <div class="flex flex-row justify-between items-center px-[20px] md:px-[60px] lg:px-[100] xl:px-[120px] 2xl:px-[200px]">
         <div class="flex flex-row py-[21px] gap-[20px]">
-          <img src="./images/ACE_Logo.png" alt="ACE Logo" class="h-[48px]" />
+          <img src="./images/ACE_Logo.png" alt="ACE Logo" class="h-[35px] md:h-[48px]" />
           <img
             src="./images/idp-logo-freelogovectors.net_.png"
             alt="IDP Education Logo"
-            class="h-[48px]"
+            class="h-[35px] md:h-[48px]"
           />
         </div>
-        <form action="" class="h-fit border-gray-600 border-2 rounded-full p-0.5 pr-3">
+        <form action="" class="h-fit border-gray-600 border-2 rounded-full p-0.5 pr-3 hidden md:block">
           <input type="search" placeholder="Search" class="border-none bg-transparent h-[30px] w-[190px] ring-0"/>
           <i class="fa-solid fa-magnifying-glass text-black"></i>
         </form>
       </div>
-      <nav class="bg-primary-color flex flex-row justify-between items-center px-[120px] h-[50px]">
+      <nav class="bg-primary-color hidden xl:flex flex-row justify-between items-center px-[120px] h-[50px] 2xl:px-[200px]">
         <!-- Left Navigation -->
-        <ul class="flex flex-row gap-[30px] justify-s items-center">
+        <ul class="flex flex-row gap-[20px] 2xl:gap-[30px] justify-s items-center">
           <!-- Programs -->
           <li
             id="dropdownHoverButton"
@@ -396,28 +396,28 @@
       <section></section>
       <section></section>
     </main>
-    <footer class="flex flex-col gap-[20px] bg-hover-color px-[120px] py-[60px]">
+    <footer class="flex flex-col gap-[10px] xl:gap-[20px] bg-hover-color px-[20px] py-[20px] md:px-[60px] md:py-[40px] lg:px-[100] xl:px-[120px] xl:py-[60px] 2xl:px-[220px]">
       <div class="flex flex-row justify-between items-center">
         <div class="flex flex-row py-[21px] gap-[20px]">
-          <img src="./images/ACE_Logo.png" alt="ACE Logo" class="h-[48px]" />
+          <img src="./images/ACE_Logo.png" alt="ACE Logo" class="h-[35px] md:h-[48px]" />
           <img
             src="./images/idp-logo-freelogovectors.net_.png"
             alt="IDP Education Logo"
-            class="h-[48px]"
+            class="h-[35px] md:h-[48px]"
           />
         </div>
-        <form action="" class="h-fit border-gray-600 border-2 rounded-full p-0.5 pr-3 bg-white">
+        <form action="" class="h-fit border-gray-600 border-2 rounded-full p-0.5 pr-3 bg-white hidden md:block">
           <input type="search" placeholder="Search" class="border-none bg-transparent h-[30px] w-[190px] ring-0"/>
           <i class="fa-solid fa-magnifying-glass text-black"></i>
         </form>
       </div>
-      <p class="text-white text-size-p1 leading-p1" >The Australian Centre for Education is a leader in the provision of English Language Teaching services in Cambodia and in the South East Asia region. ACE is an initiative of IDP Education. IDP Education has over 45 years of experience in international student placement service with over 400,000 students placed into quality institutions in Australia, the United Kingdom, the United States of America, Canada and New Zealand.</p>
-      <nav class="grid grid-cols-4 gap-[20px]">
+      <p class="text-white text-size-p2 leading-p2 xl:text-size-p1 xl:leading-p1" >The Australian Centre for Education is a leader in the provision of English Language Teaching services in Cambodia and in the South East Asia region. ACE is an initiative of IDP Education. IDP Education has over 45 years of experience in international student placement service with over 400,000 students placed into quality institutions in Australia, the United Kingdom, the United States of America, Canada and New Zealand.</p>
+      <nav class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[20px]">
         <!-- Programs -->
         <div>
-          <h5 class="text-size-t2 text-white font-t2 pb-[10px]">Programs</h5>
-          <ul class="flex flex-col gap-[5px] text-white">
-            <li class="text-size-p1 leading-p1"><a href="">Childrens' Program (CP)</a></li>
+          <h5 class="text-size-t3 xl:text-size-t2 text-white font-t2 pb-[10px]">Programs</h5>
+          <ul class="flex flex-col gap-[5px] text-white text-size-p2 leading-p2 xl:text-size-p1 xl:leading-p1">
+            <li><a href="">Childrens' Program (CP)</a></li>
             <li><a href="">Young Learner's Program (YLP)</a></li>
             <li><a href="">General English Program (GEP)</a></li>
             <li><a href="">Diploma in English</a></li>
@@ -428,9 +428,9 @@
         </div>
         <!-- Facilities -->
         <div>
-          <h5 class="text-size-t2 text-white font-t2 pb-[10px]">Facilities</h5>
-          <ul class="flex flex-col gap-[5px] text-white">
-            <li class="text-size-p1 leading-p1"><a href="">Guided Individual Learning Centres</a></li>
+          <h5 class="text-size-t3 xl:text-size-t2 text-white font-t2 pb-[10px]">Facilities</h5>
+          <ul class="flex flex-col gap-[5px] text-white text-size-p2 leading-p2 xl:text-size-p1 xl:leading-p1">
+            <li><a href="">Guided Individual Learning Centres</a></li>
             <li><a href="">IELTS Labs</a></li>
             <li><a href="">Book Clubs</a></li>
             <li><a href="">IDP Study Abroad and Scholarship Information Centre</a></li>
@@ -438,8 +438,8 @@
         </div>
         <!-- Activities -->
         <div>
-          <h5 class="text-size-t2 text-white font-t2 pb-[10px]">Activities</h5>
-          <ul class="flex flex-col gap-[5px] text-white">
+          <h5 class="text-size-t3 xl:text-size-t2 text-white font-t2 pb-[10px]">Activities</h5>
+          <ul class="flex flex-col gap-[5px] text-white text-size-p2 leading-p2 xl:text-size-p1 xl:leading-p1">
             <li class="text-size-p1 leading-p1"><a href="">ACE Public Speaking and Debate Club</a></li>
             <li><a href="">ACE Graduation</a></li>
             <li><a href="">I'mACE Magazine</a></li>
@@ -448,8 +448,8 @@
         </div>
         <!-- Sponsorship -->
         <div>
-          <h5 class="text-size-t2 text-white font-t2 pb-[10px]">Sponsorship</h5>
-          <ul class="flex flex-col gap-[5px] text-white">
+          <h5 class="text-size-t3 xl:text-size-t2 text-white font-t2 pb-[10px]">Sponsorship</h5>
+          <ul class="flex flex-col gap-[5px] text-white text-size-p2 leading-p2 xl:text-size-p1 xl:leading-p1">
             <li class="text-size-p1 leading-p1"><a href="">Sponsoring Students</a></li>
             <li><a href="">Sponsoring Procedure</a></li>
             <li><a href="">Scholarships Available at ACE</a></li>
