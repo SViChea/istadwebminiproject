@@ -62,7 +62,7 @@
 }
 
 .sepadding{
-    @apply px-[20px] py-[20px] md:px-[60px] md:py-[40px] lg:px-[100px] xl:px-[120px] xl:py-[60px] 2xl:px-[220px];
+    @apply px-[30px] py-[30px] md:px-[60px] md:py-[40px] lg:px-[100px] xl:px-[120px] xl:py-[60px] 2xl:px-[220px];
 }
 
 .h1{
