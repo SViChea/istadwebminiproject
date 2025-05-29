@@ -57,8 +57,41 @@
 
     --text-size-p2: 14px;
     --leading-p2: 22px;
+
+    --shadow-boxshadow: 0 0 15px 0 rgba(13,39,80, 0.16);
 }
 
 .sepadding{
     @apply px-[20px] py-[20px] md:px-[60px] md:py-[40px] lg:px-[100px] xl:px-[120px] xl:py-[60px] 2xl:px-[220px];
+}
+
+.h1{
+    @apply text-size-h1 leading-h1 font-h1;
+}
+.h2{
+    @apply text-size-h2 leading-h2 font-h2;
+}
+.h3{
+    @apply text-size-h3 leading-h3 font-h3;
+}
+.h4{
+    @apply text-size-h4 leading-h4 font-h4;
+}
+.t1{
+    @apply text-size-t1 leading-t1 font-t1;
+}
+.t2{
+    @apply text-size-t2 leading-t2 font-t2;
+}
+.t3{
+    @apply text-size-t3 leading-t3 font-t3;
+}
+.t4{
+    @apply text-size-t4 leading-t4 font-t4;
+}
+.p1{
+    @apply text-size-p1 leading-p1;
+}
+.p2{
+    @apply text-size-p2 leading-p2;
 }
