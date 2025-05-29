@@ -380,53 +380,49 @@
     <main>
       <!-- Main Session -->
       <section
-        class="bg-primary-color flex flex-col items-center relative h-[520px]"
+        class="bg-primary-color flex flex-col items-center relative h-[480px] md:h-[400px] lg:h-[480px] xl:h-[530px]"
       >
-        <div class="h-[400px]">
+        <div class="h-[230px] lg:h-[350px] xl:h-[400px]">
           <img
             src="./images/Enrolment Banner Website T3-25.jpg"
             alt=""
-            class="h-full object-cover"
+            class="h-full object-cover object-left md:object-center"
           />
         </div>
         <div
-          class="bg-light-gray p-[20px] w-fit rounded-[20px] flex-col items-start gap-[10px] absolute top-[350px] hidden"
+          class="bg-light-gray p-[20px] xl:w-fit rounded-[20px] flex flex-col items-start gap-[10px] absolute top-[180px] md:top-[190px] lg:top-[310px] xl:top-[360px] w-[85%]"
         >
-          <h5>Schedule your class now</h5>
-          <form action="" class="flex flex-row gap-[20px]">
-            <div class="flex flex-row gap-[20px]">
-              <div class="flex flex-col gap-1">
-                <select
-                  name="level"
-                  id="level"
-                  class="t3 rounded-[10px]"
-                  required
-                  aria-required="true"
-                >
-                  <option value="CP">Children Program (CP)</option>
-                  <option value="YLP">Young Learner Program (YLP)</option>
-                  <option value="GEP">General English Program (GEP)</option>
-                </select>
-              </div>
-              <div class="flex flex-col gap-1">
-                <select
-                  name="campus"
-                  id="campus"
-                  class="t3 rounded-[10px]"
-                  required
-                  aria-required="true"
-                >
-                  <option value="TP">ACE Toul Tumpong Campus</option>
-                  <option value="SP">ACE Samdech Pen Campus</option>
-                  <option value="CA">ACE Chak Angre Campus</option>
-                  <option value="TK">ACE Toul Kork Campus</option>
-                  <option value="SM">ACE Santhor Mok Campus</option>
-                  <option value="SR">ACE Siemreap Campus</option>
-                </select>
-              </div>
+          <h5 class="text-size-t3 leading-t3 font-medium">Schedule your class now</h5>
+          <form action="" class="flex flex-col lg:flex-row gap-[20px] w-full">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-[20px] w-full">
+              <select
+                name="level"
+                id="level"
+                class="t3 rounded-[10px] w-full"
+                required
+                aria-required="true"
+              >
+                <option value="CP">Children Program (CP)</option>
+                <option value="YLP">Young Learner Program (YLP)</option>
+                <option value="GEP">General English Program (GEP)</option>
+              </select>
+              <select
+                name="campus"
+                id="campus"
+                class="t3 rounded-[10px] w-full"
+                required
+                aria-required="true"
+              >
+                <option value="TP">ACE Toul Tumpong Campus</option>
+                <option value="SP">ACE Samdech Pen Campus</option>
+                <option value="CA">ACE Chak Angre Campus</option>
+                <option value="TK">ACE Toul Kork Campus</option>
+                <option value="SM">ACE Santhor Mok Campus</option>
+                <option value="SR">ACE Siemreap Campus</option>
+              </select>
             </div>
             <button
-              class="bg-primary-color hover:bg-hover-color p2 text-white px-[60px] py-[10px] rounded-[10px] w-full"
+              class="bg-primary-color hover:bg-hover-color p2 text-white px-[60px] py-[10px] rounded-[10px] w-full lg:w-fit"
             >
               Submit
             </button>
@@ -438,7 +434,7 @@
         <div class="flex flex-col gap-[5px]">
           <h4 class="t1">Schedule Your Placement Test Today</h4>
           <hr
-            class="border-none h-[5px] w-[20px] bg-primary-color rounded-full transition-all duration-600 ease-in-out group-hover:w-[150px]"
+            class="border-none h-[5px] w-[150px] 2xl:w-[20px] bg-primary-color rounded-full transition-all duration-600 ease-in-out group-hover:w-[150px]"
           />
         </div>
         <p class="p1">
@@ -447,9 +443,11 @@
           family book, driving license or passport is required Cost: USD 10
         </p>
         <form action="" class="grid grid-cols-1 lg:grid-cols-2 gap-[20px]">
-          <div class="flex flex-col items-start gap-[20px] w-full order-2 lg:order-1">
+          <div
+            class="flex flex-col items-start gap-[20px] w-full order-2 lg:order-1"
+          >
             <!-- First and Last Name -->
-            <div class="grid grid-cols-2 gap-[20px] w-full">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-[20px] w-full">
               <div class="flex flex-col gap-1">
                 <label for="firstName" class="t3">First Name *</label>
                 <input
@@ -502,7 +500,9 @@
               />
             </div>
             <!-- Level and Campus -->
-            <div class="grid grid-cols-2 gap-[20px] w-full">
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-[20px] w-full"
+            >
               <div class="flex flex-col gap-1">
                 <label for="level" class="t3">Select Level *</label>
                 <select

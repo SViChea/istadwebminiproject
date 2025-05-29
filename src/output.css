@@ -1001,6 +1001,18 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-\[150px\] {
+    top: 150px;
+  }
+  .top-\[180px\] {
+    top: 180px;
+  }
+  .top-\[200px\] {
+    top: 200px;
+  }
+  .top-\[250px\] {
+    top: 250px;
+  }
   .top-\[350px\] {
     top: 350px;
   }
@@ -1492,8 +1504,23 @@
   .h-\[200px\] {
     height: 200px;
   }
+  .h-\[220px\] {
+    height: 220px;
+  }
+  .h-\[230px\] {
+    height: 230px;
+  }
+  .h-\[250px\] {
+    height: 250px;
+  }
+  .h-\[300px\] {
+    height: 300px;
+  }
   .h-\[400px\] {
     height: 400px;
+  }
+  .h-\[480px\] {
+    height: 480px;
   }
   .h-\[520px\] {
     height: 520px;
@@ -1506,6 +1533,9 @@
   }
   .h-full {
     height: 100%;
+  }
+  .h-screen {
+    height: 100vh;
   }
   .max-h-full {
     max-height: 100%;
@@ -1616,6 +1646,15 @@
   }
   .w-\[20px\] {
     width: 20px;
+  }
+  .w-\[80\%\] {
+    width: 80%;
+  }
+  .w-\[85\%\] {
+    width: 85%;
+  }
+  .w-\[90\%\] {
+    width: 90%;
   }
   .w-\[150px\] {
     width: 150px;
@@ -1753,6 +1792,9 @@
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1797,6 +1839,9 @@
   }
   .gap-\[20px\] {
     gap: 20px;
+  }
+  .gap-\[21px\] {
+    gap: 21px;
   }
   .gap-\[30px\] {
     gap: 30px;
@@ -2181,6 +2226,9 @@
   }
   .object-cover {
     object-fit: cover;
+  }
+  .object-left {
+    object-position: left;
   }
   .apexcharts-legend {
     .apexcharts-canvas & {
@@ -2667,6 +2715,16 @@
       inset: calc(var(--spacing) * 0);
     }
   }
+  .md\:top-\[190px\] {
+    @media (width >= 48rem) {
+      top: 190px;
+    }
+  }
+  .md\:top-\[200px\] {
+    @media (width >= 48rem) {
+      top: 200px;
+    }
+  }
   .md\:block {
     @media (width >= 48rem) {
       display: block;
@@ -2687,14 +2745,59 @@
       height: 400px;
     }
   }
+  .md\:h-\[450px\] {
+    @media (width >= 48rem) {
+      height: 450px;
+    }
+  }
+  .md\:h-\[480px\] {
+    @media (width >= 48rem) {
+      height: 480px;
+    }
+  }
+  .md\:grid-cols-1 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:object-center {
+    @media (width >= 48rem) {
+      object-position: center;
+    }
+  }
   .md\:px-\[60px\] {
     @media (width >= 48rem) {
       padding-inline: 60px;
+    }
+  }
+  .lg\:top-\[300px\] {
+    @media (width >= 64rem) {
+      top: 300px;
+    }
+  }
+  .lg\:top-\[310px\] {
+    @media (width >= 64rem) {
+      top: 310px;
+    }
+  }
+  .lg\:top-\[330px\] {
+    @media (width >= 64rem) {
+      top: 330px;
+    }
+  }
+  .lg\:top-\[350px\] {
+    @media (width >= 64rem) {
+      top: 350px;
     }
   }
   .lg\:order-1 {
@@ -2707,9 +2810,54 @@
       order: 2;
     }
   }
+  .lg\:h-\[300px\] {
+    @media (width >= 64rem) {
+      height: 300px;
+    }
+  }
+  .lg\:h-\[350px\] {
+    @media (width >= 64rem) {
+      height: 350px;
+    }
+  }
+  .lg\:h-\[380px\] {
+    @media (width >= 64rem) {
+      height: 380px;
+    }
+  }
+  .lg\:h-\[400px\] {
+    @media (width >= 64rem) {
+      height: 400px;
+    }
+  }
+  .lg\:h-\[480px\] {
+    @media (width >= 64rem) {
+      height: 480px;
+    }
+  }
+  .lg\:h-\[500px\] {
+    @media (width >= 64rem) {
+      height: 500px;
+    }
+  }
+  .lg\:h-\[520px\] {
+    @media (width >= 64rem) {
+      height: 520px;
+    }
+  }
   .lg\:h-full {
     @media (width >= 64rem) {
       height: 100%;
+    }
+  }
+  .lg\:w-fit {
+    @media (width >= 64rem) {
+      width: fit-content;
+    }
+  }
+  .lg\:grid-cols-1 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
     }
   }
   .lg\:grid-cols-2 {
@@ -2722,14 +2870,54 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
+    }
+  }
   .lg\:px-\[100px\] {
     @media (width >= 64rem) {
       padding-inline: 100px;
     }
   }
+  .xl\:top-\[350px\] {
+    @media (width >= 80rem) {
+      top: 350px;
+    }
+  }
+  .xl\:top-\[360px\] {
+    @media (width >= 80rem) {
+      top: 360px;
+    }
+  }
+  .xl\:top-\[370px\] {
+    @media (width >= 80rem) {
+      top: 370px;
+    }
+  }
   .xl\:flex {
     @media (width >= 80rem) {
       display: flex;
+    }
+  }
+  .xl\:h-\[53-\] {
+    @media (width >= 80rem) {
+      height: 53-;
+    }
+  }
+  .xl\:h-\[400px\] {
+    @media (width >= 80rem) {
+      height: 400px;
+    }
+  }
+  .xl\:h-\[530px\] {
+    @media (width >= 80rem) {
+      height: 530px;
+    }
+  }
+  .xl\:w-fit {
+    @media (width >= 80rem) {
+      width: fit-content;
     }
   }
   .xl\:grid-cols-3 {
