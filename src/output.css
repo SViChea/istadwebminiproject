@@ -1058,6 +1058,9 @@
       max-width: 96rem;
     }
   }
+  .my-\[10px\] {
+    margin-block: 10px;
+  }
   .ms-2 {
     margin-inline-start: calc(var(--spacing) * 2);
   }
@@ -1350,6 +1353,9 @@
       color: white;
     }
   }
+  .mr-\[20px\] {
+    margin-right: 20px;
+  }
   .apexcharts-tooltip-title {
     .apexcharts-canvas .apexcharts-tooltip & {
       padding-top: 0.5rem !important;
@@ -1473,6 +1479,9 @@
   }
   .h-6 {
     height: calc(var(--spacing) * 6);
+  }
+  .h-\[1px\] {
+    height: 1px;
   }
   .h-\[5px\] {
     height: 5px;
@@ -1628,6 +1637,12 @@
   }
   .w-\[285px\] {
     width: 285px;
+  }
+  .w-\[300px\] {
+    width: 300px;
+  }
+  .w-\[320px\] {
+    width: 320px;
   }
   .w-full {
     width: 100%;
@@ -1828,6 +1843,9 @@
     .datatable-wrapper & {
       overflow-x: auto;
     }
+  }
+  .overflow-x-auto {
+    overflow-x: auto;
   }
   .overflow-x-hidden {
     overflow-x: hidden;
@@ -2091,6 +2109,9 @@
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
+  .bg-gray-600 {
+    background-color: var(--color-gray-600);
+  }
   .bg-gray-900 {
     background-color: var(--color-gray-900);
   }
@@ -2304,8 +2325,8 @@
   .pb-\[10px\] {
     padding-bottom: 10px;
   }
-  .pl-\[20px\] {
-    padding-left: 20px;
+  .pl-\[10px\] {
+    padding-left: 10px;
   }
   .pl-\[30px\] {
     padding-left: 30px;
@@ -2438,6 +2459,12 @@
     --tw-font-weight: var(--font-weight-t3);
     font-weight: var(--font-weight-t3);
   }
+  .text-wrap {
+    text-wrap: wrap;
+  }
+  .whitespace-nowrap {
+    white-space: nowrap;
+  }
   .datatable-sorter {
     .datatable-wrapper .datatable-table thead th & {
       text-transform: uppercase;
@@ -2489,6 +2516,9 @@
   .text-gray-500 {
     color: var(--color-gray-500);
   }
+  .text-gray-600 {
+    color: var(--color-gray-600);
+  }
   .text-gray-800 {
     color: var(--color-gray-800);
   }
@@ -2500,6 +2530,9 @@
   }
   .text-primary-color {
     color: var(--color-primary-color);
+  }
+  .text-red-600 {
+    color: var(--color-red-600);
   }
   .text-white {
     color: var(--color-white);
@@ -2717,6 +2750,11 @@
   .md\:h-\[400px\] {
     @media (width >= 48rem) {
       height: 400px;
+    }
+  }
+  .md\:w-\[320px\] {
+    @media (width >= 48rem) {
+      width: 320px;
     }
   }
   .md\:grid-cols-2 {
@@ -3067,7 +3105,7 @@
 }
 .intropadding {
   padding-inline: 30px;
-  padding-block: 20px;
+  padding-block: 30px;
   @media (width >= 48rem) {
     padding-inline: 60px;
   }
