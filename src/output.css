@@ -1001,20 +1001,8 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-\[150px\] {
-    top: 150px;
-  }
   .top-\[180px\] {
     top: 180px;
-  }
-  .top-\[200px\] {
-    top: 200px;
-  }
-  .top-\[250px\] {
-    top: 250px;
-  }
-  .top-\[350px\] {
-    top: 350px;
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
@@ -1465,14 +1453,8 @@
   .table {
     display: table;
   }
-  .h-0 {
-    height: calc(var(--spacing) * 0);
-  }
   .h-0\.5 {
     height: calc(var(--spacing) * 0.5);
-  }
-  .h-2 {
-    height: calc(var(--spacing) * 2);
   }
   .h-2\.5 {
     height: calc(var(--spacing) * 2.5);
@@ -1504,26 +1486,11 @@
   .h-\[200px\] {
     height: 200px;
   }
-  .h-\[220px\] {
-    height: 220px;
-  }
   .h-\[230px\] {
     height: 230px;
   }
-  .h-\[250px\] {
-    height: 250px;
-  }
-  .h-\[300px\] {
-    height: 300px;
-  }
-  .h-\[400px\] {
-    height: 400px;
-  }
   .h-\[480px\] {
     height: 480px;
-  }
-  .h-\[520px\] {
-    height: 520px;
   }
   .h-\[calc\(100\%-1rem\)\] {
     height: calc(100% - 1rem);
@@ -1533,9 +1500,6 @@
   }
   .h-full {
     height: 100%;
-  }
-  .h-screen {
-    height: 100vh;
   }
   .max-h-full {
     max-height: 100%;
@@ -1623,14 +1587,8 @@
       text-align: center;
     }
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
-  }
-  .w-2 {
-    width: calc(var(--spacing) * 2);
   }
   .w-2\.5 {
     width: calc(var(--spacing) * 2.5);
@@ -1644,17 +1602,8 @@
   .w-64 {
     width: calc(var(--spacing) * 64);
   }
-  .w-\[20px\] {
-    width: 20px;
-  }
-  .w-\[80\%\] {
-    width: 80%;
-  }
   .w-\[85\%\] {
     width: 85%;
-  }
-  .w-\[90\%\] {
-    width: 90%;
   }
   .w-\[150px\] {
     width: 150px;
@@ -1664,9 +1613,6 @@
   }
   .w-\[285px\] {
     width: 285px;
-  }
-  .w-fit {
-    width: fit-content;
   }
   .w-full {
     width: 100%;
@@ -1742,9 +1688,6 @@
   .flex-shrink {
     flex-shrink: 1;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .-translate-x-full {
     --tw-translate-x: -100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -1788,12 +1731,6 @@
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1839,9 +1776,6 @@
   }
   .gap-\[20px\] {
     gap: 20px;
-  }
-  .gap-\[21px\] {
-    gap: 21px;
   }
   .gap-\[30px\] {
     gap: 30px;
@@ -2133,9 +2067,6 @@
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
-  .bg-gray-900 {
-    background-color: var(--color-gray-900);
-  }
   .bg-gray-900\/50 {
     background-color: color-mix(in srgb, #111827 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -2206,18 +2137,6 @@
       fill: white !important;
     }
   }
-  .apexcharts-gridline {
-    stroke: var(--color-gray-200) !important;
-    .dark & {
-      stroke: var(--color-gray-700) !important;
-    }
-  }
-  .apexcharts-xcrosshairs {
-    stroke: var(--color-gray-200) !important;
-    .dark & {
-      stroke: var(--color-gray-700) !important;
-    }
-  }
   .apexcharts-ycrosshairs {
     stroke: var(--color-gray-200) !important;
     .dark & {
@@ -2240,9 +2159,6 @@
       padding: 0 !important;
     }
   }
-  .p-0 {
-    padding: calc(var(--spacing) * 0);
-  }
   .p-0\.5 {
     padding: calc(var(--spacing) * 0.5);
   }
@@ -2251,9 +2167,6 @@
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
-  }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
   }
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
@@ -2528,9 +2441,6 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-0 {
     opacity: 0%;
   }
@@ -2720,11 +2630,6 @@
       top: 190px;
     }
   }
-  .md\:top-\[200px\] {
-    @media (width >= 48rem) {
-      top: 200px;
-    }
-  }
   .md\:block {
     @media (width >= 48rem) {
       display: block;
@@ -2745,29 +2650,9 @@
       height: 400px;
     }
   }
-  .md\:h-\[450px\] {
-    @media (width >= 48rem) {
-      height: 450px;
-    }
-  }
-  .md\:h-\[480px\] {
-    @media (width >= 48rem) {
-      height: 480px;
-    }
-  }
-  .md\:grid-cols-1 {
-    @media (width >= 48rem) {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  .md\:flex-row {
-    @media (width >= 48rem) {
-      flex-direction: row;
     }
   }
   .md\:object-center {
@@ -2780,24 +2665,9 @@
       padding-inline: 60px;
     }
   }
-  .lg\:top-\[300px\] {
-    @media (width >= 64rem) {
-      top: 300px;
-    }
-  }
   .lg\:top-\[310px\] {
     @media (width >= 64rem) {
       top: 310px;
-    }
-  }
-  .lg\:top-\[330px\] {
-    @media (width >= 64rem) {
-      top: 330px;
-    }
-  }
-  .lg\:top-\[350px\] {
-    @media (width >= 64rem) {
-      top: 350px;
     }
   }
   .lg\:order-1 {
@@ -2810,39 +2680,14 @@
       order: 2;
     }
   }
-  .lg\:h-\[300px\] {
-    @media (width >= 64rem) {
-      height: 300px;
-    }
-  }
   .lg\:h-\[350px\] {
     @media (width >= 64rem) {
       height: 350px;
     }
   }
-  .lg\:h-\[380px\] {
-    @media (width >= 64rem) {
-      height: 380px;
-    }
-  }
-  .lg\:h-\[400px\] {
-    @media (width >= 64rem) {
-      height: 400px;
-    }
-  }
   .lg\:h-\[480px\] {
     @media (width >= 64rem) {
       height: 480px;
-    }
-  }
-  .lg\:h-\[500px\] {
-    @media (width >= 64rem) {
-      height: 500px;
-    }
-  }
-  .lg\:h-\[520px\] {
-    @media (width >= 64rem) {
-      height: 520px;
     }
   }
   .lg\:h-full {
@@ -2880,29 +2725,14 @@
       padding-inline: 100px;
     }
   }
-  .xl\:top-\[350px\] {
-    @media (width >= 80rem) {
-      top: 350px;
-    }
-  }
   .xl\:top-\[360px\] {
     @media (width >= 80rem) {
       top: 360px;
     }
   }
-  .xl\:top-\[370px\] {
-    @media (width >= 80rem) {
-      top: 370px;
-    }
-  }
   .xl\:flex {
     @media (width >= 80rem) {
       display: flex;
-    }
-  }
-  .xl\:h-\[53-\] {
-    @media (width >= 80rem) {
-      height: 53-;
     }
   }
   .xl\:h-\[400px\] {
