@@ -195,7 +195,6 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-primary-color: #0090CC;
-    --color-secondary-color: #CC0021;
     --color-hover-color: #285F77;
     --color-light-gray: #F0F0F0;
     --font-primary: Montserrat, system-ui, sans-serif;
@@ -1454,8 +1453,14 @@
   .table {
     display: table;
   }
+  .h-0 {
+    height: calc(var(--spacing) * 0);
+  }
   .h-0\.5 {
     height: calc(var(--spacing) * 0.5);
+  }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
   }
   .h-2\.5 {
     height: calc(var(--spacing) * 2.5);
@@ -1489,6 +1494,9 @@
   }
   .h-\[230px\] {
     height: 230px;
+  }
+  .h-\[400px\] {
+    height: 400px;
   }
   .h-\[480px\] {
     height: 480px;
@@ -1588,8 +1596,14 @@
       text-align: center;
     }
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
   }
   .w-2\.5 {
     width: calc(var(--spacing) * 2.5);
@@ -1689,6 +1703,9 @@
   .flex-shrink {
     flex-shrink: 1;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .-translate-x-full {
     --tw-translate-x: -100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -1729,6 +1746,9 @@
   }
   .resize {
     resize: both;
+  }
+  .list-disc {
+    list-style-type: disc;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -2059,6 +2079,9 @@
       background-color: var(--color-gray-700);
     }
   }
+  .bg-\[rgba\(0\,0\,0\,0\.4\)\] {
+    background-color: rgba(0,0,0,0.4);
+  }
   .bg-blue-700 {
     background-color: var(--color-blue-700);
   }
@@ -2067,6 +2090,9 @@
   }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
+  }
+  .bg-gray-900 {
+    background-color: var(--color-gray-900);
   }
   .bg-gray-900\/50 {
     background-color: color-mix(in srgb, #111827 50%, transparent);
@@ -2099,6 +2125,18 @@
     & .selectedCell {
       background-color: var(--color-gray-700);
     }
+  }
+  .bg-\[url\(\'\.\/images\/celtacambodia\.png\'\)\] {
+    background-image: url('./images/celtacambodia.png');
+  }
+  .bg-\[url\(\'\.\/images\/enrollment\.jfif\'\)\] {
+    background-image: url('./images/enrollment.jfif');
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
   }
   .apexcharts-datalabels-group {
     & .apexcharts-text.apexcharts-datalabel-value {
@@ -2138,6 +2176,18 @@
       fill: white !important;
     }
   }
+  .apexcharts-gridline {
+    stroke: var(--color-gray-200) !important;
+    .dark & {
+      stroke: var(--color-gray-700) !important;
+    }
+  }
+  .apexcharts-xcrosshairs {
+    stroke: var(--color-gray-200) !important;
+    .dark & {
+      stroke: var(--color-gray-700) !important;
+    }
+  }
   .apexcharts-ycrosshairs {
     stroke: var(--color-gray-200) !important;
     .dark & {
@@ -2160,6 +2210,9 @@
       padding: 0 !important;
     }
   }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
   .p-0\.5 {
     padding: calc(var(--spacing) * 0.5);
   }
@@ -2168,6 +2221,9 @@
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
@@ -2247,6 +2303,12 @@
   }
   .pb-\[10px\] {
     padding-bottom: 10px;
+  }
+  .pl-\[20px\] {
+    padding-left: 20px;
+  }
+  .pl-\[30px\] {
+    padding-left: 30px;
   }
   .datatable-empty {
     .datatable-wrapper .datatable-table & {
@@ -2439,14 +2501,14 @@
   .text-primary-color {
     color: var(--color-primary-color);
   }
-  .text-secondary-color {
-    color: var(--color-secondary-color);
-  }
   .text-white {
     color: var(--color-white);
   }
   .uppercase {
     text-transform: uppercase;
+  }
+  .underline {
+    text-decoration-line: underline;
   }
   .opacity-0 {
     opacity: 0%;
@@ -2757,6 +2819,11 @@
       width: fit-content;
     }
   }
+  .xl\:grid-cols-2 {
+    @media (width >= 80rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
   .xl\:grid-cols-3 {
     @media (width >= 80rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2993,6 +3060,28 @@
   }
   @media (width >= 80rem) {
     padding-block: 60px;
+  }
+  @media (width >= 96rem) {
+    padding-inline: 220px;
+  }
+}
+.intropadding {
+  padding-inline: 30px;
+  padding-block: 20px;
+  @media (width >= 48rem) {
+    padding-inline: 60px;
+  }
+  @media (width >= 48rem) {
+    padding-block: 20px;
+  }
+  @media (width >= 64rem) {
+    padding-inline: 100px;
+  }
+  @media (width >= 80rem) {
+    padding-inline: 120px;
+  }
+  @media (width >= 80rem) {
+    padding-block: 40px;
   }
   @media (width >= 96rem) {
     padding-inline: 220px;
