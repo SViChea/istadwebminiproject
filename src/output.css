@@ -195,6 +195,7 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-primary-color: #0090CC;
+    --color-secondary-color: #CC0021;
     --color-hover-color: #285F77;
     --color-light-gray: #F0F0F0;
     --font-primary: Montserrat, system-ui, sans-serif;
@@ -2432,8 +2433,14 @@
   .text-gray-900 {
     color: var(--color-gray-900);
   }
+  .text-hover-color {
+    color: var(--color-hover-color);
+  }
   .text-primary-color {
     color: var(--color-primary-color);
+  }
+  .text-secondary-color {
+    color: var(--color-secondary-color);
   }
   .text-white {
     color: var(--color-white);
